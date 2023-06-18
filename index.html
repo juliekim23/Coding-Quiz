@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
---!> link js
+    <link rel = "stylesheet" href = './style.css'>
+    <script src = "script.js"></script>
 </head>
 <body>
+    <nav>
+        <p id = VH>View Highscores</p>
+        <p id = time>Time: 
+            <p id = Timer>Timeleft</p>
+        </p>
+    </nav>
+    <section>
+        <header>Coding Quiz Challenge</header>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
+        <ul>
+            <li id = start>Start Quiz</li>
+        </ul>
+    </section>
+    <div>
+        <div class = Q1>
+            <h2>Commonly used data types do not include:</h2>
+            <ol>
+                <li id = incorrect>strings</li>
+                <li id = incorrect>booleans</li>
+                <li id = correct>alerts</li>
+                <li id = incorrect>numbers</li>
+            </ol>
+        </div>
+        <div class = Q2>
+            <h2>The condition in an if/else statement is enclosed within _____.</h2>
+            <ol>
+                <li id = incorrect>quotes</li>
+                <li id = incorrect>curly brackets</li>
+                <li id = correct>parentheses</li>
+                <li id = incorrect>square brackets</li>
+            </ol>
+        </div>
+        <div class = Q3>
+            <h2>Arrays in JavaScript can be used to store ______.</h2>
+            <ol>
+                <li id = incorrect>numbers and strings</li>
+                <li id = incorrect>other arrays</li>
+                <li id = incorrect>booleans</li>
+                <li id = correct>all of the above</li>
+            </ol>
+        </div>
+        <div class = Q4>
+            <h2>String values must be enclosed within _____ when being assigned to variables.</h2>
+            <ol>
+                <li id = incorrect>commas</li>
+                <li id = incorrect>curly brackets</li>
+                <li id = correct>quotes</li>
+                <li id = incorrect>parentheses</li>
+            </ol>
+        </div>
+        <div class = Q5>
+            <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+            <ol>
+                <li id = incorrect>JavaScript</li>
+                <li id = incorrect>terminal/bash</li>
+                <li id = incorrect>for loops</li>
+                <li id = correct>console.log</li>
+            </ol>
+        </div>
+        <div class = Q6>
+            <h2>All done!</h2>
+            <p id = finalScore>Your final score is ___</p>
+            <form>Enter initials:</form>
+        </div>
+        <div class = Q7>
+            <h2>Highscores</h2>
+            <p id = Highscore></p>
+            <ul>
+                <li>Go Back</li>
+                <li>Clear Highscores</li>
+            </ul>
+        </div>
+    </div>
     
 </body>
 </html>
