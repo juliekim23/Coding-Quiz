@@ -15,7 +15,12 @@ body{
 }
 
 section {
- 
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
@@ -38,13 +43,16 @@ li{
     text-align: center;
     padding: 2px;
     margin: 1px
-
-
-
 }
 
 li:hover{
     background-color:rgb(84, 100, 221);
 }
 
+#wrongmessage{
+    display:none;
+}
 
+#rightmessage{
+    display:none;
+}

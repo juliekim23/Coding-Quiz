@@ -1,21 +1,65 @@
-var correct = 0
-var incorrect = 0
+var correctScore = 0
+var incorrectScore = 0
+var Time = document.getElementById("Timer")
+var secondsLeft = 60
 
-//View High Scores
-var highscores = document.getElementById("VH")
-highscore.addEventListener("click", function (){
-    show Q7
+
+var wrong = document.querySelectorAll('#incorrect');
+wrong.addEventListener('click', function wrongmessage(){
+    var wrongmessage = document.getElementById("wrongmessage");
+    wrong.setAttribute (
+        "display: flex"
+    )
+}
+)
+
+var right = document.querySelectorAll('#correct')
+right.addEventListener('click', function rightmessage(){
+    var rightmessage = document.getElementById('rightmessage');
+    rightmessage.style.display = flex;
 })
+
+
+// Accessing element by id
+var firstChildUl = document.getElementById("first-child-ul");
+console.log(firstChildUl)
 
 //Start
 
+
+//Timer
+
+function setTimer(){
+    var timerInterval = setInterval(function(){
+        Time.textContent = 'Time: ' + secondsLeft;
+        secondsLeft--;
+        if (secondsLeft === 0){
+            clearInterval(timerInterval);
+            highscore();
+            localStorage.setItem("score", Score)
+
+        } 
+    },1000)
+}
+
 var start = document.getElementById("start")
 start.addEventListener("click", function() {
-    setTimer();
-    showQ1();
+    setTimer()
+        var timerInterval = setInterval(function(){
+            Time.textContent = 'Time: ' + secondsLeft;
+            secondsLeft--;
+            if (secondsLeft === 0){
+                clearInterval(timerInterval);
+                highscore();
+                localStorage.setItem("score", Score);
+    }},1000)})
+    
+showQ1();
 
-})
 
+    var Q1 = document.getElementById("Q1")
+    Q1.style.display = flex;
+    
 //Questions
 
 var wrong = document.getElementById("incorrect")
@@ -30,36 +74,30 @@ right.addEventListener("click", function (){
     correct++;
 })
 
-function showQ1(){
-    if (start) {
-        document.getElementsByClassName("Q1").style.display = flex
-    }
-
-}
 
 showQ1()
 
-
-//Timer
-//add if incorrect, secondsLeft-10
-
-var Time = document.getElementById("Timer")
-var secondsLeft = 60
+showHS()
 
 
-function setTimer(){
-    var timeleft = setInterval(function(){
-        secondsLeft--;
-        Time.textContent = secondsLeft
-        if (secondsLeft === 0){
-            clearInterval(timeleft);
-            highscore();
-        } 
-    }, 1000);
+
+//View High Scores
+var vhighscores = document.getElementById("VH")
+vhighscores.addEventListener("click", function (){
+
+    var HS = document.getElementById("Highscore")
+    function showHS (){
+        HS.style.display = "flex";}
+
+})
+
+var finalScore = document.querySelector("#finalScore");
+
+
+finalScore.textContent = [correctScore - incorrectScore];
+finalScore.textContent = Score
+
+//Add Initials and score
+function highscore (){
+
 }
-
-
-//Store Answers
-var Correct = 0
-var Incorrect = 0
-

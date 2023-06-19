@@ -11,18 +11,22 @@
     <nav>
         <p id = VH>View Highscores</p>
         <p id = time>Time: 
-            <p id = Timer>Timeleft</p>
+            <p id = Timer></p>
         </p>
     </nav>
     <section>
-        <header>Coding Quiz Challenge</header>
+        <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
         <ul>
             <li id = start>Start Quiz</li>
         </ul>
     </section>
     <div>
-        <div class = Q1>
+        <div>
+            <p id = wrongmessage>WRONG!</p>
+            <p id = rightmessage>RIGHT!</p>
+        </div>
+        <div id = Q1>
             <h2>Commonly used data types do not include:</h2>
             <ol>
                 <li id = incorrect>strings</li>
@@ -72,9 +76,12 @@
             <p id = finalScore>Your final score is ___</p>
             <form>Enter initials:</form>
         </div>
-        <div class = Q7>
+        <div id = Q7>
             <h2>Highscores</h2>
-            <p id = Highscore></p>
+            <p id = Highscore>
+                <li id = HSCorrect></li>
+                <li id = HSIncorrect></li>
+            </p>
             <ul>
                 <li>Go Back</li>
                 <li>Clear Highscores</li>
