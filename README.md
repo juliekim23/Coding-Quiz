@@ -5,7 +5,7 @@ The deployed application is a timed quiz on questions about coding. It stores hi
 
 # Screenshot 
 
-![Coding Quiz](/Screenshot%202023-06-18%20at%202.37.30%20pm.png?raw=true "Coding Quiz")
+![Coding Quiz](/Screenshot%202023-06-19%20at%2011.27.48%20pm.png?raw=true "Coding Quiz")
 
 Instructions from: https://stackoverflow.com/questions/10189356/how-to-add-screenshot-to-readmes-in-github-repository 
 

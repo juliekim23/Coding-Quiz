@@ -16,7 +16,7 @@ wrong.addEventListener('click', function wrongmessage(){
 var right = document.querySelectorAll('#correct')
 right.addEventListener('click', function rightmessage(){
     var rightmessage = document.getElementById('rightmessage');
-    rightmessage.style.display = flex;
+    rightmessage.style.display = 'flex';
 })
 
 
